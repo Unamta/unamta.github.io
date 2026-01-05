@@ -1,6 +1,143 @@
-<!DOCTYPE >
-<html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Unamta Aslam</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
   <body>
-    meow
+    <!-- Cloud background layer -->
+    <div id="cloudBg" aria-hidden="true"></div>
+
+    <!-- Nav bar -->
+    <header class="site-header" id="siteHeader">
+      <nav class="nav">
+        <a class="nav-brand" href="#top">Unamta Aslam</a>
+
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a class="nav-cta" href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Section 1 -->
+    <!-- Section 1: Hero -->
+    <section class="panel panel-one" id="home">
+      <h1 class="hero-name">Unamta</h1>
+      <h1 class="hero-name">Aslam</h1>
+      <p class="paragraph-white">
+        Hi! I am a Junior Software Developer currently studying at
+        <br />
+        uni. I am interested in coding and electronics. I build software,
+        <br />
+        experiment with electronics, and learn by making things.
+      </p>
+    </section>
+
+    <!-- Section 2 -->
+    <!-- Section 2: About -->
+    <section class="panel panel-two" id="about">
+      <p class="paragraph-white">About me</p>
+      <hr />
+      <h1 class="heading">Hi, I'm Unamta.</h1>
+      <p align="right" class="paragraph-white">
+        I'm a Computer Science undergraduate and an aspiring software
+        <br />
+        developer with interests in full-stack development and electronics.
+      </p>
+
+      <p align="right" class="paragraph">
+        I enjoy building practical projects across web and hardware, learning
+        <br />
+        through hands-on experimentation
+        <br />
+      </p>
+    </section>
+
+    <!-- Section 3 Skill -->
+    <section class="panel panel-three" id="skills">
+      <h1 class="heading-black">Skills & Technologies</h1>
+      <hr />
+
+      <div class="carousel-1">
+        <div class="group-1">
+          <div class="card">1</div>
+          <div class="card">2</div>
+          <div class="card">3</div>
+          <div class="card">4</div>
+          <div class="card">5</div>
+          <div class="card">6</div>
+        </div>
+        <div aria-hidden class="group-1">
+          <div class="card">1</div>
+          <div class="card">2</div>
+          <div class="card">3</div>
+          <div class="card">4</div>
+          <div class="card">5</div>
+          <div class="card">6</div>
+        </div>
+      </div>
+
+       <div class="carousel-2">
+    <div class="group-2">
+      <div class="card">7</div>
+      <div class="card">8</div>
+      <div class="card">9</div>
+      <div class="card">10</div>
+      <div class="card">11</div>
+      <div class="card">12</div>
+    </div>
+        <div aria-hidden class="group-2">
+      <div class="card">7</div>
+      <div class="card">8</div>
+      <div class="card">9</div>
+      <div class="card">10</div>
+      <div class="card">11</div>
+      <div class="card">12</div>
+    </div>
+    </section>
+
+    <!-- Section 4: Projects -->
+    <section class="panel panel-four" id="projects">
+      <p class="heading">Projects</p>
+      <hr />
+      <h1 class="paragraph-white">01. Knova (Group Project – Northcoders)</h1>
+      <p class="paragraph-white">Node.js, Express, PostgreSQL, Jest</p>
+      <hr />
+      <h1 class="paragraph-white">02. NC News – Front-End</h1>
+      <p class="paragraph-white">React, JavaScript, HTML, CSS</p>
+
+      <ul>
+        <li>React</li>
+        <li>JavaScript</li>
+        <li>HTML</li>
+        <li>CSS</li>
+      </ul>
+
+      <hr />
+      <h1 class="paragraph-white">03. NC News – Back-End API</h1>
+      <p class="paragraph-white">Node.js, Express, Supertest, Jest</p>
+
+      <hr />
+      <h1 class="paragraph-white">04. Morse Code Device</h1>
+      <p class="paragraph-white">Raspberry Pi Pico, Python, MQTT</p>
+
+      <hr />
+      <h1 class="paragraph-white">05. ESP32 Security Camera</h1>
+      <p class="paragraph-white">ESP32, Python, OpenCV</p>
+    </section>
+
+    <!-- Section 5 (optional, just for scrolling) -->
+    <!-- Section 5: Contact -->
+    <section class="panel panel-five" id="contact">
+      <h2>More Content</h2>
+    </section>
+
+    <script src="script.js"></script>
   </body>
 </html>
