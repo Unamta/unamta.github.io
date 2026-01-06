@@ -43,20 +43,25 @@
       <p class="paragraph-white">About me</p>
       <hr />
       <h1 class="heading">Hi, I'm Unamta.</h1>
-      <p align="right" class="paragraph-white">
-        I'm a Computer Science undergraduate and
-        <br />
-        an aspiring software developer with interests
-        <br />
-        in full-stack development and electronics.
-      </p>
-      <br />
-      <p align="right" class="paragraph-white">
-        I enjoy building practical projects across web
-        <br />
-        and hardware, learning through hands-on
-        <br />
-      </p>
+      <div style="display: flex; justify-content: space-between">
+        <p align="left" class="paragraph-white" id="element"></p>
+        <div>
+          <p align="right" class="paragraph-white">
+            I'm a Computer Science undergraduate and
+            <br />
+            an aspiring software developer with interests
+            <br />
+            in full-stack development and electronics.
+          </p>
+          <br />
+          <p align="right" class="paragraph-white">
+            I enjoy building practical projects across web
+            <br />
+            and hardware, learning through hands-on
+            <br />
+          </p>
+        </div>
+      </div>
     </section>
 
     <!-- Section 3: Skills -->
@@ -65,38 +70,38 @@
       <hr />
       <div class="carousel-1">
         <div class="group-1">
-          <div class="card">Node.js</div>
-          <div class="card">Express</div>
-          <div class="card">PostgreSQL</div>
-          <div class="card">JavaScript</div>
-          <div class="card">CSS</div>
-          <div class="card">HTML</div>
+          <div class="card"><img src="logo/nodedotjs.svg" />Node.js</div>
+          <div class="card"><img src="logo/express.svg" />Express</div>
+          <div class="card"><img src="logo/postgresql.svg" />PostgreSQL</div>
+          <div class="card"><img src="logo/javascript.svg" />JavaScript</div>
+          <div class="card"><img src="logo/css.svg" />CSS</div>
+          <div class="card"><img src="logo/html5.svg" />HTML</div>
         </div>
         <div aria-hidden class="group-1">
-          <div class="card">Node.js</div>
-          <div class="card">Express</div>
-          <div class="card">PostgreSQL</div>
-          <div class="card">JavaScript</div>
-          <div class="card">CSS</div>
-          <div class="card">HTML</div>
+          <div class="card"><img src="logo/nodedotjs.svg" />Node.js</div>
+          <div class="card"><img src="logo/express.svg" />Express</div>
+          <div class="card"><img src="logo/postgresql.svg" />PostgreSQL</div>
+          <div class="card"><img src="logo/javascript.svg" />JavaScript</div>
+          <div class="card"><img src="logo/css.svg" />CSS</div>
+          <div class="card"><img src="logo/html5.svg" />HTML</div>
         </div>
       </div>
       <div class="carousel-2">
         <div class="group-2">
-          <div class="card">Raspberry Pi Pico</div>
-          <div class="card">MQTT</div>
-          <div class="card">OpenCV</div>
-          <div class="card">ESP32</div>
-          <div class="card">Python</div>
-          <div class="card">Jest</div>
+          <div class="card"><img src="logo/raspberrypi.svg" />Raspberry Pi</div>
+          <div class="card"><img src="logo/mqtt.svg" />MQTT</div>
+          <div class="card"><img src="logo/opencv.svg" />OpenCV</div>
+          <div class="card"><img src="logo/espressif.svg" />ESP32</div>
+          <div class="card"><img src="logo/python.svg" />Python</div>
+          <div class="card"><img src="logo/jest.svg" />Jest</div>
         </div>
         <div aria-hidden class="group-2">
-          <div class="card">Raspberry Pi Pico</div>
-          <div class="card">MQTT</div>
-          <div class="card">OpenCV</div>
-          <div class="card">ESP32</div>
-          <div class="card">Python</div>
-          <div class="card">Jest</div>
+          <div class="card"><img src="logo/raspberrypi.svg" />Raspberry Pi</div>
+          <div class="card"><img src="logo/mqtt.svg" />MQTT</div>
+          <div class="card"><img src="logo/opencv.svg" />OpenCV</div>
+          <div class="card"><img src="logo/espressif.svg" />ESP32</div>
+          <div class="card"><img src="logo/python.svg" />Python</div>
+          <div class="card"><img src="logo/jest.svg" />Jest</div>
         </div>
       </div>
     </section>
@@ -145,12 +150,31 @@
       <h2>Have a project idea in mind?</h2>
       <br />
       <div class="button-group">
-        <a href="https://github.com/unamta">Github</a>
+        <a href="https://github.com/unamta"><img src="logo/github.svg" />Github</a>
         <a href="https://uk.linkedin.com/in/unamta-aslam-ab397923b">LinkedIn</a>
-        <a href="mailto:example@example.com">Email</a>
+        <a href="mailto:example@example.com"><img src="logo/gmail.svg" />Email</a>
       </div>
     </section>
 
     <script src="script.js"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed("#element", {
+        strings: [
+          "Meow meow meow",
+          "I'm from London, UK. 🔪",
+          "I love coding.",
+          "I build software and experiment with electronics.",
+          "I'm 22 years old.",
+          "I love cats.",
+        ],
+        typeSpeed: 50,
+        loop: true,
+        showCursor: false,
+        shuffle: true,
+        smartBackspace: true,
+        backDelay: 1250,
+      });
+    </script>
   </body>
 </html>

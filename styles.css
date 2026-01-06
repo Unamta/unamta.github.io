@@ -28,18 +28,14 @@ html {
 }
 
 /*=====================================*/
-/* NAV BAR - Sticky header so it stays visible */
+
 .site-header {
   position: sticky;
   top: 0;
   z-index: 9999;
-
-  /* Slightly see-through like modern portfolios 
-  background: rgba(248, 245, 242, 0.5);
-  backdrop-filter: blur(8px);*/
 }
 
-/* Nav layout: left brand + right links */
+/* Nav bar */
 .nav {
   max-width: 1400px;
   margin: 0 auto;
@@ -74,12 +70,10 @@ html {
   border-radius: 6px;
 }
 
-/* Hover */
 .nav-links a:hover {
   background: rgba(196, 154, 108, 0.18);
 }
 
-/* Optional: small improvement for narrow screens */
 @media (max-width: 640px) {
   .nav {
     flex-direction: column;
@@ -191,6 +185,11 @@ p {
   to {translate: -100%;}
 }
 
+@keyframes spin-reversed {
+  from {translate: -100%;}
+  to {translate: 0;}
+}
+
 .carousel-1 {
   overflow-x: auto;
   margin: 100px auto;
@@ -208,7 +207,7 @@ p {
   align-items: center;
   justify-content: center;
   gap: 1em;
-  animation: spin 15s infinite linear;
+  animation: spin 13.5s infinite linear;
   padding-right: 1em;
 }
 
@@ -229,8 +228,7 @@ p {
   align-items: center;
   justify-content: center;
   gap: 1em;
-  animation: spin 13s infinite linear;
-  animation-delay: -5.5s;
+  animation: spin-reversed 13s infinite linear;
   padding-right: 1em;
 }
 
@@ -240,9 +238,53 @@ p {
   padding: 4em;
   background: white;
   font-size: 1rem;
-  border-radius: 0.5em;
+  border-radius: 1em;
   text-align: center;
   align-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  white-space: nowrap;
+}
+
+/*fade affect on edges*/
+.carousel-1,
+.carousel-2 {
+  position: relative;
+  overflow: hidden; 
+}
+
+.carousel-1::before,
+.carousel-1::after,
+.carousel-2::before,
+.carousel-2::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 80px;              /* fade width */
+  height: 100%;
+  z-index: 2;
+  pointer-events: none;     /* allows clicking through */
+}
+
+.carousel-1::before,
+.carousel-2::before {
+  left: 0;
+  background: linear-gradient(
+    to right,
+    #f1e9df 0%,   /* page background colour */
+    rgba(241, 233, 223, 0) 100%
+  );
+}
+
+.carousel-1::after,
+.carousel-2::after {
+  right: 0;
+  background: linear-gradient(
+    to left,
+    #f1e9df 0%,
+    rgba(241, 233, 223, 0) 100%
+  );
 }
 
 .panel-four {
@@ -293,3 +335,14 @@ p {
   transform: translateY(0);
 }
 
+div.card img {
+  transform: translateY(-20px);
+  width: 40px;
+  height: auto;
+}
+
+div.button-group img {
+  transform: translateY(-20px);
+  width: 25px;
+  height: auto;
+}
