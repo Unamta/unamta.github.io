@@ -186,6 +186,11 @@ p {
   color: #1f1f1f;
 }
 
+@keyframes spin {
+  from {translate: 0;}
+  to {translate: -100%;}
+}
+
 .carousel-1 {
   overflow-x: auto;
   margin: 100px auto;
@@ -203,7 +208,7 @@ p {
   align-items: center;
   justify-content: center;
   gap: 1em;
-  animation: spin 13s infinite linear;
+  animation: spin 15s infinite linear;
   padding-right: 1em;
 }
 
@@ -225,22 +230,19 @@ p {
   justify-content: center;
   gap: 1em;
   animation: spin 13s infinite linear;
+  animation-delay: -5.5s;
   padding-right: 1em;
 }
 
 .card {
   flex: 0 0 4em;
   height: 3.2em;
-  padding: 1em;
+  padding: 4em;
   background: white;
-  font-size: 3rem;
+  font-size: 1rem;
   border-radius: 0.5em;
   text-align: center;
   align-content: center;
-}
-@keyframes spin {
-  from {translate: 0;}
-  to {translate: -100%;}
 }
 
 .panel-four {
@@ -251,4 +253,43 @@ p {
 .panel-five {
   background-color: #e6ddd6;
   color: #1f1f1f;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
+
+/* Button group container */
+.button-group {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Contact section link buttons */
+.panel-five a {
+  display: inline-block;
+  padding: 1rem 2rem;
+  width: 150px;
+  text-align: center;
+  margin: 0.5rem;
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  border: 2px solid #333;
+}
+
+.panel-five a:hover {
+  background-color: #fff;
+  color: #333;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.panel-five a:active {
+  transform: translateY(0);
+}
+
