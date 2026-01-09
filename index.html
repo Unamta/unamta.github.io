@@ -3,14 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <title>Unamta Aslam</title>
+    <link rel="icon" type="image/x-icon" href="/logo/beige-sparkle.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
   </head>
 
   <body>
-    <!-- Cloud background layer -->
-    <div id="cloudBg" aria-hidden="true"></div>
-
     <!-- Nav bar -->
     <header class="site-header" id="siteHeader">
       <nav class="nav">
@@ -21,14 +19,33 @@
           <li><a href="#skills">Skills</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a class="nav-cta" href="#contact">Contact</a></li>
+          <li>
+            <img src="brightness-contrast.svg" id="dark-mode-toggle" />
+          </li>
+          <li class="palette-menu-wrapper">
+            <img src="menu.svg" id="palette-toggle" />
+            <div class="palette-dropdown" id="paletteDropdown">
+              <button class="palette-option" data-palette="default">
+                Default
+              </button>
+              <button class="palette-option" data-palette="red">Red</button>
+              <button class="palette-option" data-palette="sunset">
+                Sunset
+              </button>
+            </div>
+          </li>
         </ul>
       </nav>
     </header>
 
     <!-- Section 1:Unamta Aslam -->
     <section class="panel panel-one" id="home">
+      <!-- Cloud Background:-->
+      <div id="cloudBg" aria-hidden="true"></div>
+
       <h1 class="hero-name">Unamta</h1>
       <h1 class="hero-name">Aslam</h1>
+
       <p class="paragraph-white">
         Hi! I am a Junior Software Developer currently studying at
         <br />
@@ -40,25 +57,35 @@
 
     <!-- Section 2: About me -->
     <section class="panel panel-two" id="about">
-      <p class="paragraph-white">About me</p>
+      <p class="paragraph-white">Who am I?</p>
       <hr />
-      <h1 class="heading">Hi, I'm Unamta.</h1>
-      <div style="display: flex; justify-content: space-between">
-        <p align="left" class="paragraph-white" id="element"></p>
-        <div>
-          <p align="right" class="paragraph-white">
-            I'm a Computer Science undergraduate and
-            <br />
-            an aspiring software developer with interests
-            <br />
-            in full-stack development and electronics.
+      <h1 class="heading">Hi, I'm Unamta I'm...</h1>
+      <p align="left" class="paragraph-white" id="element"></p>
+      <div class="about-columns">
+        <div class="about-column">
+          <p class="paragraph-white">
+            Currently studying BSc Computer Science at Goldsmiths, University of
+            London. I'm an aspiring software developer with a particular
+            interest in full-stack development and electronics.
           </p>
-          <br />
-          <p align="right" class="paragraph-white">
-            I enjoy building practical projects across web
-            <br />
-            and hardware, learning through hands-on
-            <br />
+
+          <p class="paragraph-white">
+            I enjoy building practical projects that combine web technologies
+            and hardware.
+          </p>
+        </div>
+
+        <div class="about-column">
+          <p class="paragraph-white">
+            I learn best through hands-on experimentation.
+          </p>
+
+          <p />
+
+          <p class="paragraph-white">
+            Whether I'm working on a website or an electronics-based project,
+            I'm motivated by problem-solving and creating things that work in
+            the real world.
           </p>
         </div>
       </div>
@@ -70,38 +97,62 @@
       <hr />
       <div class="carousel-1">
         <div class="group-1">
-          <div class="card"><img src="logo/nodedotjs.svg" />Node.js</div>
-          <div class="card"><img src="logo/express.svg" />Express</div>
-          <div class="card"><img src="logo/postgresql.svg" />PostgreSQL</div>
-          <div class="card"><img src="logo/javascript.svg" />JavaScript</div>
-          <div class="card"><img src="logo/css.svg" />CSS</div>
-          <div class="card"><img src="logo/html5.svg" />HTML</div>
+          <div class="card paragraph">
+            <img src="logo/nodedotjs.svg" />Node.js
+          </div>
+          <div class="card paragraph">
+            <img src="logo/express.svg" />Express
+          </div>
+          <div class="card paragraph">
+            <img src="logo/postgresql.svg" />PostgreSQL
+          </div>
+          <div class="card paragraph">
+            <img src="logo/javascript.svg" />JavaScript
+          </div>
+          <div class="card paragraph"><img src="logo/css.svg" />CSS</div>
+          <div class="card paragraph"><img src="logo/html5.svg" />HTML</div>
         </div>
         <div aria-hidden class="group-1">
-          <div class="card"><img src="logo/nodedotjs.svg" />Node.js</div>
-          <div class="card"><img src="logo/express.svg" />Express</div>
-          <div class="card"><img src="logo/postgresql.svg" />PostgreSQL</div>
-          <div class="card"><img src="logo/javascript.svg" />JavaScript</div>
-          <div class="card"><img src="logo/css.svg" />CSS</div>
-          <div class="card"><img src="logo/html5.svg" />HTML</div>
+          <div class="card paragraph">
+            <img src="logo/nodedotjs.svg" />Node.js
+          </div>
+          <div class="card paragraph">
+            <img src="logo/express.svg" />Express
+          </div>
+          <div class="card paragraph">
+            <img src="logo/postgresql.svg" />PostgreSQL
+          </div>
+          <div class="card paragraph">
+            <img src="logo/javascript.svg" />JavaScript
+          </div>
+          <div class="card paragraph"><img src="logo/css.svg" />CSS</div>
+          <div class="card paragraph"><img src="logo/html5.svg" />HTML</div>
         </div>
       </div>
       <div class="carousel-2">
         <div class="group-2">
-          <div class="card"><img src="logo/raspberrypi.svg" />Raspberry Pi</div>
-          <div class="card"><img src="logo/mqtt.svg" />MQTT</div>
-          <div class="card"><img src="logo/opencv.svg" />OpenCV</div>
-          <div class="card"><img src="logo/espressif.svg" />ESP32</div>
-          <div class="card"><img src="logo/python.svg" />Python</div>
-          <div class="card"><img src="logo/jest.svg" />Jest</div>
+          <div class="card paragraph">
+            <img src="logo/raspberrypi.svg" />Raspberry Pi
+          </div>
+          <div class="card paragraph"><img src="logo/mqtt.svg" />MQTT</div>
+          <div class="card paragraph"><img src="logo/opencv.svg" />OpenCV</div>
+          <div class="card paragraph">
+            <img src="logo/espressif.svg" />ESP32
+          </div>
+          <div class="card paragraph"><img src="logo/python.svg" />Python</div>
+          <div class="card paragraph"><img src="logo/jest.svg" />Jest</div>
         </div>
         <div aria-hidden class="group-2">
-          <div class="card"><img src="logo/raspberrypi.svg" />Raspberry Pi</div>
-          <div class="card"><img src="logo/mqtt.svg" />MQTT</div>
-          <div class="card"><img src="logo/opencv.svg" />OpenCV</div>
-          <div class="card"><img src="logo/espressif.svg" />ESP32</div>
-          <div class="card"><img src="logo/python.svg" />Python</div>
-          <div class="card"><img src="logo/jest.svg" />Jest</div>
+          <div class="card paragraph">
+            <img src="logo/raspberrypi.svg" />Raspberry Pi
+          </div>
+          <div class="card paragraph"><img src="logo/mqtt.svg" />MQTT</div>
+          <div class="card paragraph"><img src="logo/opencv.svg" />OpenCV</div>
+          <div class="card paragraph">
+            <img src="logo/espressif.svg" />ESP32
+          </div>
+          <div class="card paragraph"><img src="logo/python.svg" />Python</div>
+          <div class="card paragraph"><img src="logo/jest.svg" />Jest</div>
         </div>
       </div>
     </section>
@@ -115,13 +166,6 @@
       <hr />
       <h1 class="paragraph-white">02. NC News - Front-End</h1>
       <p class="paragraph-white">React, JavaScript, HTML, CSS</p>
-
-      <ul>
-        <li>React</li>
-        <li>JavaScript</li>
-        <li>HTML</li>
-        <li>CSS</li>
-      </ul>
 
       <hr />
       <h1 class="paragraph-white">03. NC News - Back-End API</h1>
@@ -137,23 +181,23 @@
       <br />
       <br />
       <br />
-      <p class="paragraph-white">
-        Education BSc Computer Science - Goldsmiths, University of London
-        (Currently studying) Software Development Bootcamp - Northcoders
-      </p>
     </section>
 
     <!-- Section 5: Contact me -->
     <section class="panel panel-five" id="contact">
-      <h1 class="heading-black">Contact me.</h1>
-      <hr />
-      <h2>Have a project idea in mind?</h2>
+      <h1 class="heading-black">Thank you for your curiosity.</h1>
       <br />
       <div class="button-group">
-        <a href="https://github.com/unamta"><img src="logo/github.svg" />Github</a>
-        <a href="https://uk.linkedin.com/in/unamta-aslam-ab397923b">LinkedIn</a>
-        <a href="mailto:example@example.com"><img src="logo/gmail.svg" />Email</a>
+        <a href="https://github.com/unamta"
+          ><img src="logo/github.svg" />Github</a
+        >
+        <a href="https://www.linkedin.com/in/unamta-aslam/">LinkedIn</a>
+        <a href="mailto:example@example.com"
+          ><img src="logo/gmail.svg" />Email</a
+        >
       </div>
+      <h2 class="heading-black">Have a project idea in mind?</h2>
+      <h1 class="paragraph">Contact me.</h1>
     </section>
 
     <script src="script.js"></script>
@@ -161,12 +205,12 @@
     <script>
       var typed = new Typed("#element", {
         strings: [
-          "Meow meow meow",
-          "I'm from London, UK. 🔪",
-          "I love coding.",
-          "I build software and experiment with electronics.",
-          "I'm 22 years old.",
-          "I love cats.",
+          " Meow meow meow",
+          " I'm from London, UK. 🔪",
+          " I love coding.",
+          " I build software and experiment with electronics.",
+          " I'm 22 years old.",
+          " I love cats.",
         ],
         typeSpeed: 50,
         loop: true,
