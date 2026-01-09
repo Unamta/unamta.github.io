@@ -5,8 +5,16 @@
     <title>Unamta Aslam</title>
     <link rel="icon" type="image/x-icon" href="/logo/beige-sparkle.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://use.typekit.net/qtt3kij.css">
     <link rel="stylesheet" href="styles.css" />
-  </head>
+<!--    <style>
+      .hero-name {
+        font-family: "warbler-banner", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+      }
+    </style>-->
+  </head> 
 
   <body>
     <!-- Nav bar -->
@@ -20,10 +28,10 @@
           <li><a href="#projects">Projects</a></li>
           <li><a class="nav-cta" href="#contact">Contact</a></li>
           <li>
-            <img src="brightness-contrast.svg" id="dark-mode-toggle" />
+            <img src="icons/brightness-contrast.svg" id="dark-mode-toggle" />
           </li>
           <li class="palette-menu-wrapper">
-            <img src="menu.svg" id="palette-toggle" />
+            <img src="icons/menu.svg" id="palette-toggle" />
             <div class="palette-dropdown" id="paletteDropdown">
               <button class="palette-option" data-palette="default">
                 Default
@@ -38,7 +46,7 @@
       </nav>
     </header>
 
-    <!-- Section 1:Unamta Aslam -->
+    <!-- Section 1: Home -->
     <section class="panel panel-one" id="home">
       <!-- Cloud Background:-->
       <div id="cloudBg" aria-hidden="true"></div>
@@ -47,9 +55,9 @@
       <h1 class="hero-name">Aslam</h1>
 
       <p class="paragraph-white">
-        Hi! I am a Junior Software Developer currently studying at
+        A Junior Software Developer currently studying at
         <br />
-        uni. I am interested in coding and electronics. I build software,
+        uni. Interested in coding and electronics. I build software,
         <br />
         experiment with electronics, and learn by making things.
       </p>
@@ -57,35 +65,33 @@
 
     <!-- Section 2: About me -->
     <section class="panel panel-two" id="about">
-      <p class="paragraph-white">Who am I?</p>
+      <p class="heading">So who am I?</p>
       <hr />
-      <h1 class="heading">Hi, I'm Unamta I'm...</h1>
-      <p align="left" class="paragraph-white" id="element"></p>
+      <div class="about-heading-row">
+        <div class="group-3" id="text-scroll">
+          - Cat lover - meow meow meow - gluten free - My names Unamta - from
+          London - 22 years old
+        </div>
+      </div>
+
       <div class="about-columns">
         <div class="about-column">
           <p class="paragraph-white">
             Currently studying BSc Computer Science at Goldsmiths, University of
-            London. I'm an aspiring software developer with a particular
-            interest in full-stack development and electronics.
+            London.
           </p>
 
           <p class="paragraph-white">
-            I enjoy building practical projects that combine web technologies
-            and hardware.
-          </p>
-        </div>
-
-        <div class="about-column">
-          <p class="paragraph-white">
-            I learn best through hands-on experimentation.
+            I'm an aspiring software developer with a particular interest in
+            full-stack development and electronics.
+            I enjoy building projects that combine web technologies and
+            hardware. I learn best through hands-on experimentation.
           </p>
 
-          <p />
-
           <p class="paragraph-white">
-            Whether I'm working on a website or an electronics-based project,
-            I'm motivated by problem-solving and creating things that work in
-            the real world.
+            Whether I'm working on a website or an electronics project, I'm
+            motivated by problem-solving and creating things that work in the
+            real world.
           </p>
         </div>
       </div>
@@ -161,14 +167,23 @@
     <section class="panel panel-four" id="projects">
       <p class="heading">Projects</p>
       <hr />
-      <h1 class="paragraph-white">01. Knova (Group Project - Northcoders)</h1>
+      <a href="https://www.northcoders.com/blog/student-projects-knowva/"
+        ><h1 class="paragraph-white">
+          01. Knova (Group Project - Northcoders)
+        </h1></a
+      >
+      <!-- <a href="https://github.com/NC-Knowva">(github)</a> -->
       <p class="paragraph-white">Node.js, Express, PostgreSQL, Jest</p>
       <hr />
-      <h1 class="paragraph-white">02. NC News - Front-End</h1>
+      <a href="https://github.com/Unamta/Nc-News-Frontend"
+        ><h1 class="paragraph-white">02. NC News - Front-End</h1></a
+      >
       <p class="paragraph-white">React, JavaScript, HTML, CSS</p>
 
       <hr />
-      <h1 class="paragraph-white">03. NC News - Back-End API</h1>
+      <a href="https://github.com/Unamta/Nc-News"
+        ><h1 class="paragraph-white">03. NC News - Back-End API</h1></a
+      >
       <p class="paragraph-white">Node.js, Express, Supertest, Jest</p>
 
       <hr />
@@ -185,40 +200,71 @@
 
     <!-- Section 5: Contact me -->
     <section class="panel panel-five" id="contact">
-      <h1 class="heading-black">Thank you for your curiosity.</h1>
-      <br />
-      <div class="button-group">
-        <a href="https://github.com/unamta"
-          ><img src="logo/github.svg" />Github</a
-        >
-        <a href="https://www.linkedin.com/in/unamta-aslam/">LinkedIn</a>
-        <a href="mailto:example@example.com"
-          ><img src="logo/gmail.svg" />Email</a
-        >
-      </div>
-      <h2 class="heading-black">Have a project idea in mind?</h2>
-      <h1 class="paragraph">Contact me.</h1>
-    </section>
+      <div class="contact-columns">
+        <div class="contact-column">
+          <h1 class="heading-black-no-tab">Say hello!</h1>
+          <p class="paragraph-black-bigger">
+            I'd love to hear from you and always welcome any feedback - please
+            don't hesitate to get in touch!
+          </p>
 
-    <script src="script.js"></script>
-    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-    <script>
-      var typed = new Typed("#element", {
-        strings: [
-          " Meow meow meow",
-          " I'm from London, UK. 🔪",
-          " I love coding.",
-          " I build software and experiment with electronics.",
-          " I'm 22 years old.",
-          " I love cats.",
-        ],
-        typeSpeed: 50,
-        loop: true,
-        showCursor: false,
-        shuffle: true,
-        smartBackspace: true,
-        backDelay: 1250,
-      });
-    </script>
+          <div class="button-group">
+            <a href="https://github.com/unamta">Github</a>
+            <a href="https://www.linkedin.com/in/unamta-aslam/">LinkedIn</a>
+            <a href="mailto:example@example.com">Email</a>
+          </div>
+        </div>
+
+        <div class="contact-container">
+          <form
+            action="https://api.web3forms.com/submit"
+            method="POST"
+            class="contact-left"
+          >
+            <input
+              type="hidden"
+              name="access_key"
+              value="363f78d1-96e4-4b9d-b8a2-999bd5310c95"
+            />
+
+            <input
+              type="text"
+              name="name"
+              placeholder="Name (required)"
+              class="contact-inputs"
+              required
+            />
+
+            <input
+              type="email"
+              name="email"
+              placeholder="Email (required)"
+              class="contact-inputs"
+              required
+            />
+
+            <select name="reason" class="contact-inputs" required>
+              <option value="" disabled selected>Reason for contact</option>
+              <option value="general">General enquiry</option>
+              <option value="project">Project / freelance</option>
+              <option value="job">Job opportunity</option>
+              <option value="collaboration">Collaboration</option>
+              <option value="other">Other</option>
+            </select>
+
+            <textarea
+              name="message"
+              placeholder="Message"
+              class="contact-inputs"
+              required
+            ></textarea>
+            <div class="button-group">
+              <button type="submit" class="btn-link">Submit</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <script src="script.js" defer></script>
   </body>
 </html>
