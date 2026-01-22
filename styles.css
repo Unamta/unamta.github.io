@@ -421,6 +421,15 @@ p {
   color: #f8f5f2;
 }
 
+.panel-four a {
+  color: #f8f5f2;
+  text-decoration: none;
+}
+
+.panel-four a:hover {
+  text-decoration: underline;
+}
+
 .panel-five {
   background-color: #e6ddd6;
   color: #1f1f1f;
@@ -488,7 +497,7 @@ p {
   margin-top: 20px;
 }
 
-/* FORM */
+/* contact me */
 .contact-container {
   width: 100%;
 }
@@ -605,6 +614,7 @@ div.button-group img {
 
 /* color palette */
 :root {
+  --primary-hero: #1f1f1f;
   --primary-dark: #1f1f1f;
   --primary-light: #f8f5f2;
   --secondary-light: #efe7e0;
@@ -615,6 +625,7 @@ div.button-group img {
 
 /* Red/Wheat Palette */
 body[data-palette="red"] {
+  --primary-hero: #f5ecd2;
   --primary-dark: #f5ecd2;
   --primary-light: #a30002;
   --secondary-light: #2e4365;
@@ -625,6 +636,7 @@ body[data-palette="red"] {
 
 /* blue/yellow Palette */
 body[data-palette="sunset"] {
+  --primary-hero: #2e4365;
   --primary-dark: #2e4365;
   --primary-light: #fadc9a;
   --secondary-light: #fadc9a;
@@ -635,6 +647,7 @@ body[data-palette="sunset"] {
 
 /* Dark mode Palette */
 body[data-palette="dark"] {
+  --primary-hero: #cfa65a;
   --primary-dark: #1f1f1f;
   --primary-light: #f8f5f2;
   --secondary-light: #2a2a2a;
@@ -686,12 +699,15 @@ body[data-palette="dark"] .palette-option.active {
 }
 
 /* apply palette colors to content */
-.hero-name,
+.hero-name {
+  color: var(--primary-hero);
+}
+
 .heading-black {
   color: var(--primary-dark);
 }
 
-.hero-name,
+/* .hero-name, */
 .heading-black,
 .paragraph {
   color: var(--primary-white);
