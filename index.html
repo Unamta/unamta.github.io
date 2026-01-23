@@ -1,246 +1,412 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Unamta Aslam</title>
+    <link rel="icon" type="image/x-icon" href="/logo/beige-sparkle.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://use.typekit.net/qtt3kij.css" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <title>Unamta Aslam</title>
-  <link rel="icon" type="image/x-icon" href="/logo/beige-sparkle.png" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="https://use.typekit.net/qtt3kij.css" />
-  <link rel="stylesheet" href="styles.css" />
-  <style>
-    .hero-name {
-      /* font-family: "warbler-banner", sans-serif; */
-      font-weight: 800;
-      font-style: normal;
-      align-self: center;
-    }
-  </style>
-</head>
+  <body>
+    <!-- Nav bar -->
+    <header class="site-header" id="siteHeader">
+      <nav class="nav">
+        <!-- <a class="nav-brand" href="#top">Unamta Aslam</a> -->
+        <a class="nav-brand" href="#top"><img src="ua_monogram.png" /></a>
 
-<body>
-  <!-- Nav bar -->
-  <header class="site-header" id="siteHeader">
-    <nav class="nav">
-      <!-- <a class="nav-brand" href="#top">Unamta Aslam</a> -->
-      <a class="nav-brand" href="#top"><img src="ua_monogram.png" /></a>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a class="nav-cta" href="#contact">Contact</a></li>
+          <li>
+            <img src="icons/brightness-contrast.svg" id="dark-mode-toggle" />
+          </li>
+          <li class="palette-menu-wrapper">
+            <img src="icons/menu.svg" id="palette-toggle" />
+            <div class="palette-dropdown" id="paletteDropdown">
+              <button class="palette-option" data-palette="default">
+                Default
+              </button>
+              <button class="palette-option" data-palette="sunset">
+                Sunset
+              </button>
+            </div>
+          </li>
+        </ul>
+      </nav>
+    </header>
 
-      <ul class="nav-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a class="nav-cta" href="#contact">Contact</a></li>
-        <li>
-          <img src="icons/brightness-contrast.svg" id="dark-mode-toggle" />
-        </li>
-        <li class="palette-menu-wrapper">
-          <img src="icons/menu.svg" id="palette-toggle" />
-          <div class="palette-dropdown" id="paletteDropdown">
-            <button class="palette-option" data-palette="default">
-              Default
-            </button>
-            <button class="palette-option" data-palette="red">Red</button>
-            <button class="palette-option" data-palette="sunset">
-              Sunset
-            </button>
+    <!-- Section 1: Home -->
+    <section class="panel panel-one" id="home">
+      <!-- Background: -->
+      <div id="homeBg" aria-hidden="true"></div>
+      <h1 class="hero-name top-name">Unamta</h1>
+      <h1 class="hero-name">Aslam</h1>
+      <a href="#contact" class="work-with-me-btn">WORK WITH ME</a>
+    </section>
+
+    <!-- Section 2: About me -->
+    <section class="panel panel-two" id="about">
+      <p class="heading">Who am I?</p>
+      <hr />
+      <div class="about-heading-row">
+        <div class="group-3" id="text-scroll">
+          - Cat lover - meow meow meow - gluten free - My names Unamta - from
+          London - 22 years old - YIPEEEEE
+        </div>
+      </div>
+
+
+        <div class="about">
+          <p class="paragraph-white">
+            Currently studying BSc Computer Science at Goldsmiths, University of
+            London.
+          </p>
+
+          <p class="paragraph-white">
+            I'm an aspiring software developer with a particular interest in
+            full-stack development and electronics. I enjoy building projects
+            that combine web technologies and hardware. I learn best through
+            hands-on experimentation.
+          </p>
+
+          <p class="paragraph-white">
+            Whether I'm working on a website or an electronics project, I'm
+            motivated by problem-solving and creating things that work in the
+            real world.
+          </p>
+        </div>
+
+    </section>
+
+    <!-- Section 3: Skills -->
+    <section class="panel panel-three" id="skills">
+      <h1 class="heading-black">Skills & Technologies</h1>
+      <hr />
+      <div class="carousel-1">
+        <div class="group-1">
+          <div class="card paragraph">
+            <img src="logo/nodedotjs.svg" />Node.js
           </div>
-        </li>
-      </ul>
-    </nav>
-  </header>
-
-  <!-- Section 1: Home -->
-  <section class="panel panel-one" id="home">
-    <!-- Cloud Background:-->
-    <div id="cloudBg" aria-hidden="true"></div>
-
-    <h1 class="hero-name top-name">Unamta</h1>
-    <h1 class="hero-name">Aslam</h1>
-    <a href="#contact" class="work-with-me-btn">WORK WITH ME</a>
-
-  </section>
-
-  <!-- Section 2: About me -->
-  <section class="panel panel-two" id="about">
-    <p class="heading">Who am I?</p>
-    <hr />
-    <div class="about-heading-row">
-      <div class="group-3" id="text-scroll">
-        - Cat lover - meow meow meow - gluten free - My names Unamta - from
-        London - 22 years old
+          <div class="card paragraph">
+            <img src="logo/express.svg" />Express
+          </div>
+          <div class="card paragraph">
+            <img src="logo/postgresql.svg" />PostgreSQL
+          </div>
+          <div class="card paragraph">
+            <img src="logo/javascript.svg" />JavaScript
+          </div>
+          <div class="card paragraph"><img src="logo/css.svg" />CSS</div>
+          <div class="card paragraph"><img src="logo/html5.svg" />HTML</div>
+        </div>
+        <div aria-hidden class="group-1">
+          <div class="card paragraph">
+            <img src="logo/nodedotjs.svg" />Node.js
+          </div>
+          <div class="card paragraph">
+            <img src="logo/express.svg" />Express
+          </div>
+          <div class="card paragraph">
+            <img src="logo/postgresql.svg" />PostgreSQL
+          </div>
+          <div class="card paragraph">
+            <img src="logo/javascript.svg" />JavaScript
+          </div>
+          <div class="card paragraph"><img src="logo/css.svg" />CSS</div>
+          <div class="card paragraph"><img src="logo/html5.svg" />HTML</div>
+        </div>
       </div>
-    </div>
+      <div class="carousel-2">
+        <div class="group-2">
+          <div class="card paragraph">
+            <img src="logo/raspberrypi.svg" />Raspberry Pi
+          </div>
+          <div class="card paragraph"><img src="logo/mqtt.svg" />MQTT</div>
+          <div class="card paragraph"><img src="logo/opencv.svg" />OpenCV</div>
+          <div class="card paragraph">
+            <img src="logo/espressif.svg" />ESP32
+          </div>
+          <div class="card paragraph"><img src="logo/python.svg" />Python</div>
+          <div class="card paragraph"><img src="logo/jest.svg" />Jest</div>
+        </div>
+        <div aria-hidden class="group-2">
+          <div class="card paragraph">
+            <img src="logo/raspberrypi.svg" />Raspberry Pi
+          </div>
+          <div class="card paragraph"><img src="logo/mqtt.svg" />MQTT</div>
+          <div class="card paragraph"><img src="logo/opencv.svg" />OpenCV</div>
+          <div class="card paragraph">
+            <img src="logo/espressif.svg" />ESP32
+          </div>
+          <div class="card paragraph"><img src="logo/python.svg" />Python</div>
+          <div class="card paragraph"><img src="logo/jest.svg" />Jest</div>
+        </div>
+      </div>
+    </section>
 
-    <div class="about-columns">
-      <div class="about-column">
-        <p class="paragraph-white">
-          Currently studying BSc Computer Science at Goldsmiths, University of
-          London.
+    <!-- Section 4: Projects -->
+    <section class="panel panel-four" id="projects">
+      <p class="heading">Projects</p>
+      <hr />
+
+      <button class="project-link" data-project="knova">
+        <h1 class="paragraph-white">01. Knova (Group Project - Northcoders)</h1>
+      </button>
+      <p class="paragraph-white">Node.js, Express, PostgreSQL, Jest</p>
+      <hr />
+
+      <button class="project-link" data-project="nc-news-frontend">
+        <h1 class="paragraph-white">02. NC News - Front-End</h1>
+      </button>
+      <p class="paragraph-white">React, JavaScript, HTML, CSS</p>
+      <hr />
+
+      <button class="project-link" data-project="nc-news-backend">
+        <h1 class="paragraph-white">03. NC News - Back-End API</h1>
+      </button>
+      <p class="paragraph-white">Node.js, Express, Supertest, Jest</p>
+      <hr />
+
+      <button class="project-link" data-project="morse-code">
+        <h1 class="paragraph-white">04. Morse Code Device</h1>
+      </button>
+      <p class="paragraph-white">Raspberry Pi Pico, Python, MQTT</p>
+      <hr />
+
+      <button class="project-link" data-project="esp32-camera">
+        <h1 class="paragraph-white">05. ESP32 Security Camera</h1>
+      </button>
+      <p class="paragraph-white">ESP32, Python, OpenCV</p>
+      <br /><br /><br />
+    </section>
+
+    <!-- Modal Dialogs -->
+    <dialog id="knova-dialog" class="project-dialog">
+      <form method="dialog">
+        <h2>Knova (Group Project - Northcoders)</h2>
+        <p>
+          <strong>Tech: </strong>JavaScript, Node.js, Express, PostgreSQL, Jest
         </p>
-
-        <p class="paragraph-white">
-          I'm an aspiring software developer with a particular interest in
-          full-stack development and electronics. I enjoy building projects
-          that combine web technologies and hardware. I learn best through
-          hands-on experimentation.
+        <p>
+          A collaborative full-stack application developed as part of the
+          Northcoders bootcamp.
         </p>
+        <p><strong>Key contributions: </strong></p>
+        <ul>
+          <li>Built RESTful API endpoints using Node.js and Express</li>
+          <li>
+            Designed and managed PostgreSQL databases with migrations and
+            seeding
+          </li>
+          <li>Wrote automated tests using Jest and Supertest</li>
+          <li>
+            Collaborated in an Agile team using GitHub and pair programming
+          </li>
+        </ul>
+        <button class="close-dialog">&times;</button>
+        <div class="project-links">
+          <a
+            href="https://www.northcoders.com/blog/student-projects-knowva/"
+            target="_blank"
+            class="project-icon-link"
+          >
+            <img src="icons/link.svg" alt="Live link" class="icon" />
+            <span>LIVE</span>
+          </a>
+          <a
+            href="https://github.com/NC-Knowva"
+            target="_blank"
+            class="project-icon-link"
+          >
+            <img src="logo/github.svg" alt="GitHub" class="icon" />
+            <span>GITHUB</span>
+          </a>
+        </div>
+      </form>
+    </dialog>
 
-        <p class="paragraph-white">
-          Whether I'm working on a website or an electronics project, I'm
-          motivated by problem-solving and creating things that work in the
-          real world.
+    <dialog id="nc-news-frontend-dialog" class="project-dialog">
+      <form method="dialog">
+        <h2>NC News - Front-End</h2>
+        <p><strong>Tech: </strong>React, JavaScript, HTML, CSS</p>
+        <p>
+          A responsive front-end application that consumes a RESTful API to
+          display news articles.
         </p>
-      </div>
-    </div>
-  </section>
+        <p><strong>Features: </strong></p>
+        <ul>
+          <li>Dynamic rendering of articles and comments</li>
+          <li>User interaction and navigation</li>
+          <li>Accessibility and performance improvements using Lighthouse</li>
+          <li>Deployed using Netlify</li>
+        </ul>
+        <button class="close-dialog">&times;</button>
+        <div class="project-links">
+          <a
+            href="https://github.com/Unamta/Nc-News-Frontend"
+            target="_blank"
+            class="project-icon-link"
+          >
+            <img src="icons/link.svg" alt="Live link" class="icon" />
+            <span>LIVE</span>
+          </a>
+          <a
+            href="https://github.com/Unamta/Nc-News-Frontend"
+            target="_blank"
+            class="project-icon-link"
+          >
+            <img src="logo/github.svg" alt="GitHub" class="icon" />
+            <span>GITHUB</span>
+          </a>
+        </div>
+      </form>
+    </dialog>
 
-  <!-- Section 3: Skills -->
-  <section class="panel panel-three" id="skills">
-    <h1 class="heading-black">Skills & Technologies</h1>
-    <hr />
-    <div class="carousel-1">
-      <div class="group-1">
-        <div class="card paragraph">
-          <img src="logo/nodedotjs.svg" />Node.js
-        </div>
-        <div class="card paragraph">
-          <img src="logo/express.svg" />Express
-        </div>
-        <div class="card paragraph">
-          <img src="logo/postgresql.svg" />PostgreSQL
-        </div>
-        <div class="card paragraph">
-          <img src="logo/javascript.svg" />JavaScript
-        </div>
-        <div class="card paragraph"><img src="logo/css.svg" />CSS</div>
-        <div class="card paragraph"><img src="logo/html5.svg" />HTML</div>
-      </div>
-      <div aria-hidden class="group-1">
-        <div class="card paragraph">
-          <img src="logo/nodedotjs.svg" />Node.js
-        </div>
-        <div class="card paragraph">
-          <img src="logo/express.svg" />Express
-        </div>
-        <div class="card paragraph">
-          <img src="logo/postgresql.svg" />PostgreSQL
-        </div>
-        <div class="card paragraph">
-          <img src="logo/javascript.svg" />JavaScript
-        </div>
-        <div class="card paragraph"><img src="logo/css.svg" />CSS</div>
-        <div class="card paragraph"><img src="logo/html5.svg" />HTML</div>
-      </div>
-    </div>
-    <div class="carousel-2">
-      <div class="group-2">
-        <div class="card paragraph">
-          <img src="logo/raspberrypi.svg" />Raspberry Pi
-        </div>
-        <div class="card paragraph"><img src="logo/mqtt.svg" />MQTT</div>
-        <div class="card paragraph"><img src="logo/opencv.svg" />OpenCV</div>
-        <div class="card paragraph">
-          <img src="logo/espressif.svg" />ESP32
-        </div>
-        <div class="card paragraph"><img src="logo/python.svg" />Python</div>
-        <div class="card paragraph"><img src="logo/jest.svg" />Jest</div>
-      </div>
-      <div aria-hidden class="group-2">
-        <div class="card paragraph">
-          <img src="logo/raspberrypi.svg" />Raspberry Pi
-        </div>
-        <div class="card paragraph"><img src="logo/mqtt.svg" />MQTT</div>
-        <div class="card paragraph"><img src="logo/opencv.svg" />OpenCV</div>
-        <div class="card paragraph">
-          <img src="logo/espressif.svg" />ESP32
-        </div>
-        <div class="card paragraph"><img src="logo/python.svg" />Python</div>
-        <div class="card paragraph"><img src="logo/jest.svg" />Jest</div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Section 4: Projects -->
-  <section class="panel panel-four" id="projects">
-    <p class="heading">Projects</p>
-    <hr />
-    <a href="https://www.northcoders.com/blog/student-projects-knowva/">
-      <h1 class="paragraph-white">
-        01. Knova (Group Project - Northcoders)
-      </h1>
-    </a>
-    <!-- <a href="https://github.com/NC-Knowva">(github)</a> -->
-    <p class="paragraph-white">Node.js, Express, PostgreSQL, Jest</p>
-    <hr />
-    <a href="https://github.com/Unamta/Nc-News-Frontend">
-      <h1 class="paragraph-white">02. NC News - Front-End</h1>
-    </a>
-    <p class="paragraph-white">React, JavaScript, HTML, CSS</p>
-
-    <hr />
-    <a href="https://github.com/Unamta/Nc-News">
-      <h1 class="paragraph-white">03. NC News - Back-End API</h1>
-    </a>
-    <p class="paragraph-white">Node.js, Express, Supertest, Jest</p>
-
-    <hr />
-    <h1 class="paragraph-white">04. Morse Code Device</h1>
-    <p class="paragraph-white">Raspberry Pi Pico, Python, MQTT</p>
-
-    <hr />
-    <h1 class="paragraph-white">05. ESP32 Security Camera</h1>
-    <p class="paragraph-white">ESP32, Python, OpenCV</p>
-    <br />
-    <br />
-    <br />
-  </section>
-
-  <!-- Section 5: Contact me -->
-  <section class="panel panel-five" id="contact">
-    <div class="contact-columns">
-      <div class="contact-column">
-        <h1 class="heading-black-no-tab">Say hello!</h1>
-        <p class="paragraph-black-bigger">
-          I'd love to hear from you and always welcome any feedback - please
-          don't hesitate to get in touch!
+    <dialog id="nc-news-backend-dialog" class="project-dialog">
+      <form method="dialog">
+        <h2>NC News - Back-End API</h2>
+        <p>
+          <strong>Tech: </strong>Node.js, Express, PostgreSQL, Jest, Supertest
         </p>
-
-        <div class="button-group">
-          <a href="https://github.com/unamta">Github</a>
-          <a href="https://www.linkedin.com/in/unamta-aslam/">LinkedIn</a>
-          <a href="mailto:example@example.com">Email</a>
+        <p>A RESTful API providing data for a news application.</p>
+        <p><strong>Features: </strong></p>
+        <ul>
+          <li>Structured API endpoints for articles, users, and comments</li>
+          <li>Relational database design using PostgreSQL</li>
+          <li>Test-driven development with comprehensive automated tests</li>
+        </ul>
+        <button class="close-dialog">&times;</button>
+        <div class="project-links">
+          <a
+            href="https://nc-news-905s.onrender.com/api"
+            target="_blank"
+            class="project-icon-link"
+          >
+            <img src="icons/link.svg" alt="Live link" class="icon" />
+            <span>LIVE</span>
+          </a>
+          <a
+            href="https://github.com/Unamta/Nc-News"
+            target="_blank"
+            class="project-icon-link"
+          >
+            <img src="logo/github.svg" alt="GitHub" class="icon" />
+            <span>GITHUB</span>
+          </a>
         </div>
-      </div>
+      </form>
+    </dialog>
 
-      <div class="contact-container">
-        <form action="https://api.web3forms.com/submit" method="POST" class="contact-left">
-          <input type="hidden" name="access_key" value="363f78d1-96e4-4b9d-b8a2-999bd5310c95" />
+    <dialog id="morse-code-dialog" class="project-dialog">
+      <form method="dialog">
+        <h2>Morse Code Device</h2>
+        <p><strong>Tech: </strong> Raspberry Pi Pico, Python, MQTT</p>
+        <p>
+          A hardware-software project to transmit and decode Morse code
+          messages.
+        </p>
+        <p><strong>Features: </strong></p>
+        <ul>
+          <li>Real-time Morse code translation</li>
+          <li>MQTT messaging for remote communication</li>
+          <li>MicroPython implementation on Raspberry Pi Pico</li>
+        </ul>
+        <button class="close-dialog">&times;</button>
+      </form>
+    </dialog>
 
-          <input type="text" name="name" placeholder="Name (required)" class="contact-inputs" required />
+    <dialog id="esp32-camera-dialog" class="project-dialog">
+      <form method="dialog">
+        <h2>ESP32 Security Camera</h2>
+        <p><strong>Tech: </strong> ESP32, Python, OpenCV</p>
+        <p>
+          A functional security camera project combining hardware and software.
+        </p>
+        <p><strong>Key Features:</strong></p>
+        <ul>
+          <li>Live video streaming from ESP32-CAM</li>
+          <li>Motion detection with OpenCV</li>
+          <li>Network connectivity for remote monitoring</li>
+        </ul>
+        <button class="close-dialog">&times;</button>
+      </form>
+    </dialog>
 
-          <input type="email" name="email" placeholder="Email (required)" class="contact-inputs" required />
+    <!-- Section 5: Contact me -->
+    <section class="panel panel-five" id="contact">
+      <div class="contact-columns">
+        <div class="contact-column">
+          <h1 class="heading-black-bigger">Say hello!</h1>
+          <p class="paragraph">
+            I'd love to hear from you and always welcome any feedback - please
+            don't hesitate to get in touch!
+          </p>
 
-          <select name="reason" class="contact-inputs" required>
-            <option value="" disabled selected>Reason for contact</option>
-            <option value="general">General enquiry</option>
-            <option value="project">Project / freelance</option>
-            <option value="job">Job opportunity</option>
-            <option value="collaboration">Collaboration</option>
-            <option value="other">Other</option>
-          </select>
-
-          <textarea name="message" placeholder="Message" class="contact-inputs" required></textarea>
           <div class="button-group">
-            <button type="submit" class="btn-link">Submit</button>
+            <a href="https://github.com/unamta">Github</a>
+            <a href="https://www.linkedin.com/in/unamta-aslam/">LinkedIn</a>
+            <a href="mailto:example@example.com">Email</a>
           </div>
-        </form>
-      </div>
-    </div>
-  </section>
-  <script src="script.js" defer></script>
+        </div>
 
-  <footer class="site-footer">
-    <p class="footer-text">© 2026 Unamta Aslam. All rights reserved.</p>
-  </footer>
-</body>
+        <div class="contact-container">
+          <form
+            action="https://api.web3forms.com/submit"
+            method="POST"
+            class="contact-left"
+          >
+            <input
+              type="hidden"
+              name="access_key"
+              value="363f78d1-96e4-4b9d-b8a2-999bd5310c95"
+            />
+
+            <input
+              type="text"
+              name="name"
+              placeholder="Name (required)"
+              class="contact-inputs"
+              required
+            />
+
+            <input
+              type="email"
+              name="email"
+              placeholder="Email (required)"
+              class="contact-inputs"
+              required
+            />
+
+            <select name="reason" class="contact-inputs" required>
+              <option value="" disabled selected>Reason for contact</option>
+              <option value="general">General enquiry</option>
+              <option value="project">Project / freelance</option>
+              <option value="job">Job opportunity</option>
+              <option value="collaboration">Collaboration</option>
+              <option value="other">Other</option>
+            </select>
+
+            <textarea
+              name="message"
+              placeholder="Message"
+              class="contact-inputs"
+              required
+            ></textarea>
+            <div class="button-group">
+              <button type="submit" class="btn-link">Submit</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <script src="script.js" defer></script>
+
+    <footer class="site-footer">
+      <p class="footer-text">© 2026 Unamta Aslam. All rights reserved.</p>
+    </footer>
+  </body>
 </html>

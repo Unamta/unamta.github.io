@@ -17,7 +17,7 @@ const navObserver = new IntersectionObserver(
 navObserver.observe(heroSection);
 
 //cloud transition
-const cloudBg = document.getElementById("cloudBg");
+const homeBg = document.getElementById("homeBg");
 window.addEventListener("scroll", () => {
   const scrolled = window.scrollY;
   const windowHeight = window.innerHeight;
@@ -25,14 +25,14 @@ window.addEventListener("scroll", () => {
   const endFade = windowHeight * 1.2;
 
   if (scrolled < startFade) {
-    cloudBg.style.opacity = 1;
+    homeBg.style.opacity = 1;
   } else if (scrolled > endFade) {
-    cloudBg.style.opacity = 0;
+    homeBg.style.opacity = 0;
   } else {
     const fadeRange = endFade - startFade;
     const fadeProgress = scrolled - startFade;
     const opacity = 1 - fadeProgress / fadeRange;
-    cloudBg.style.opacity = opacity;
+    homeBg.style.opacity = opacity;
   }
 });
 
@@ -119,3 +119,15 @@ document.addEventListener("DOMContentLoaded", () => {
   }, 200);
 });
 
+// Add event listeners to all project buttons
+const projectButtons = document.querySelectorAll('.project-link');
+
+projectButtons.forEach(button => {
+  button.addEventListener('click', () => {
+    const projectId = button.getAttribute('data-project');
+    const dialog = document.getElementById(`${projectId}-dialog`);
+    if (dialog) {
+      dialog.showModal();
+    }
+  });
+});
