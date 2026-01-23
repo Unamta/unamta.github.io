@@ -848,3 +848,106 @@ body[data-palette="dark"] .panel-five button {
   font-size: 14px;
   color: var(--accent-light);
 }
+
+/*Smaller screens wow*/
+@media (max-width: 900px) {
+  .panel {
+    padding: 60px 24px;
+  }
+
+  .nav {
+    gap: 24px;
+    padding: 12px 16px;
+    justify-content: space-between;
+  }
+
+  .nav-links {
+    gap: 16px;
+    font-size: 18px;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+
+  .nav-links a {
+    padding: 6px 8px;
+  }
+
+  .hero-name {
+    font-size: 72px;
+    text-align: center;
+  }
+
+  .top-name::before,
+  .top-name::after {
+    font-size: 18px;
+    margin: 0 12px;
+  }
+
+  .work-with-me-btn {
+    padding: 0.9rem 2rem;
+    border-radius: 60px;
+    font-size: 1.1rem;
+  }
+
+  .group-3 {
+    font-size: 28px;
+  }
+
+  .card {
+    padding: 2.2em;
+    height: auto;
+  }
+
+  div.card img {
+    width: 32px;
+    transform: translateY(-10px);
+  }
+
+  .project-dialog {
+    width: 92%;
+    padding: 1.2rem;
+    max-height: 85vh;
+  }
+
+  .heading-black-bigger {
+    font-size: 58px;
+    text-align: center;
+  }
+
+  .panel-five a,
+  .panel-five button {
+    width: 100%;
+    max-width: 280px;
+  }
+}
+
+@media (max-width: 480px) {
+  .panel {
+    padding: 52px 16px;
+  }
+
+  .hero-name {
+    font-size: 56px;
+  }
+
+  .heading,
+  .heading-black {
+    font-size: 36px;
+    padding: 18px 0;
+  }
+
+  .paragraph,
+  .paragraph-white {
+    font-size: 18px;
+  }
+
+  .nav-links {
+    font-size: 16px;
+    gap: 10px;
+  }
+
+  #dark-mode-toggle,
+  #palette-toggle {
+    width: 26px;
+  }
+}
